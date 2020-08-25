@@ -156,3 +156,47 @@ Arrays, Object Literals, Functions, Dates, Anything else
 
    console.log(sum); // = 11
    console.log(typeof sum); // = number
+
+
+// NUMBERS AND THE MATH OBJECT 
+
+const num1 = 100;
+const num2 = 50;
+let val;
+
+// Simple math with numbers
+val = num1 + num2;
+val = num1 * num2;
+val = num1 - num2;
+val = num1 / num2;
+val = num1 % num2;
+
+// Math object 
+val = Math.PI;
+val = Math.E;
+val = Math.round(2.8);
+// round up 
+val = Math.ceil(2.4);
+// round down
+val = Math.floor(2.8);
+val = Math.sqrt(64);
+// absolute number 
+val = Math.abs(-3); // = will give you the absolute num 3
+
+val = Math.pow(8, 2);
+// return minimum
+val = Math.min(2,33,56,8);
+val = Math.max(2,33,56,8);
+// get a random decimal number
+val = Math.random();
+// random number with decimal and between 0 to 20
+val = Math.random() * 20;
+// get random number without decimals 
+val = Math.floor(Math.random() * 20 +1);
+
+/* Math is an object = it has properties and methods 
+Properties = an attribute
+Method = a function inside of an object 
+*/
+
+console.log(val)
