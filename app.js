@@ -199,4 +199,70 @@ Properties = an attribute
 Method = a function inside of an object 
 */
 
-console.log(val)
+console.log(val);
+
+
+// STRING METHODS AND CONCATENATION 
+
+
+const firstName = 'William';
+const lastName = 'Johnson';
+const age = 50;
+const str = 'Hello my name is Gladys';
+const tags = 'web desing, ux, ui';
+
+let val;
+
+val = firstName + lastName;
+
+// Concatenation
+val = firstName + '' + lastName;
+
+// Append  (add but not replace)
+val = 'Gladys';
+val += 'Alvarez';
+
+val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+
+// Escaping  (to be able to use ' in a sentence, use "" or \)
+val = "That's awesome , i can't wait"
+
+// Length property
+val = firstName.length;
+
+// concat() method to separate
+val = firstName.concat(' ', lastName);
+
+// Change case 
+val = firstName.toUpperCase();
+val = firstName.toLowerCase();
+
+// Get a character 
+val = firstName[2]
+
+// indexOf() to know the index of a character
+val = firstName.indexOf('l');
+val = firstName.lastIndexOf('l'); // go the other way
+
+// charAt() to know the character at that position 
+val = firstName.charAt('2');
+
+// get last character
+val = firstName.charAt(firstName.length -1);
+
+// get substring() to get characters from 0 to 4
+val = firstName.substring(0, 4);
+
+// slice() to use in strings and arrays 
+val = firstName.slice(0, 4);
+val = firstName.slice(-3); // this will start from the back 
+
+// split() this will turn them into an array
+val = str.split(' ');
+val = tags.split(','); 
+
+// replace() replace something inside a string 
+val = str.replace('Gladys', 'Brad');
+
+// includes() true or false, values are based if something is on the string 
+val = str.includes('Hello');
