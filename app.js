@@ -108,3 +108,51 @@ Arrays, Object Literals, Functions, Dates, Anything else
    console.log(today);
 
    console.log(typeof hobbies);
+
+   // TYPE CONVERSION (changing the type of a variable)
+
+   let val;
+
+   // Number to String
+   val = String(5);
+   val = String(5+5);
+
+   // Boolean to String
+   val = String(true);
+
+   // Date to String 
+   val = String(new Date());
+
+   // Array to String
+   val = String([1,2,3,4]);
+
+   // toString() method
+   val = (5).toString();
+   val = (true).toString();
+
+   // String to Number 
+   val = Number('5');
+   val = Number(true); // = 1
+   val = Number(false); // = 0
+   val = Number(null); // = 0
+   val = Number('Hello'); // NaN
+   val = Number([1,2,3]); //= NaN
+
+   // Always leave it without decimals 
+   val = parseInt('100.30'); // = 100
+   // Use decimals 
+   val = parseFloat('100.30'); // = 100.3 (withouth the last 0, to added it you can use toFixed(2))
+
+   // Output 
+   console.log(val);
+   console.log(typeof val)
+   console.log(val.length) // only works on strings to give you the number of characters
+   console.log(val.toFixed()); // only works with numbers, you can specify decimals 
+
+
+   const val1 = 5; // this can be = 56 if we use String()
+   const val2 = 6;
+   const sum = val1 + val2;
+
+   console.log(sum); // = 11
+   console.log(typeof sum); // = number
