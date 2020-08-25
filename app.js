@@ -26,7 +26,7 @@ name = 'John Doe';
 console.log(name);
 
 // Initialize a variable 
-let greeting;
+// let greeting;
 console.log(greeting); // undefined 
 greeting = 'Hello';
 
@@ -38,7 +38,7 @@ let first_name = '' // Underscore  (mostly used in PHP)
 let FirstName = '' // Pascal case (for a constructor function, create a class)
 
 // Const 
-const name = 'John';
+// const name = 'John';
 console.log('John');
 
 //Can not reassign
@@ -73,7 +73,7 @@ String, Number, Boolean, Null, Undefined, Symbols (ES6)
 */
 
 // String
-const name = 'John Doe';
+// const name = 'John Doe';
 // Number
 const age = 26;
 // Boolean
@@ -162,7 +162,7 @@ Arrays, Object Literals, Functions, Dates, Anything else
 
 const num1 = 100;
 const num2 = 50;
-let val;
+// let val;
 
 // Simple math with numbers
 val = num1 + num2;
@@ -205,13 +205,13 @@ console.log(val);
 // STRING METHODS AND CONCATENATION 
 
 
-const firstName = 'William';
+// const firstName = 'William';
 const lastName = 'Johnson';
-const age = 50;
+// const age = 50;
 const str = 'Hello my name is Gladys';
 const tags = 'web desing, ux, ui';
 
-let val;
+// let val;
 
 val = firstName + lastName;
 
@@ -266,3 +266,41 @@ val = str.replace('Gladys', 'Brad');
 
 // includes() true or false, values are based if something is on the string 
 val = str.includes('Hello');
+
+
+// TEMPLATE LITERALS 
+
+// const name = 'John';
+// const age = 30;
+const job = 'Web developer';
+const city = 'Miami';
+let html;
+
+// Without template strings ES5
+html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + ' </li><li>Job: ' + job + '</li><li>City:' 
++ city + '</li><ul>';
+
+// Same as 
+html = '<ul>' +
+        '<li>Name: ' + name + '</li>' +
+        '<li>Age: ' + age + ' </li>' +
+        '</ul>';
+
+function hello() {
+  return 'hello';
+}
+
+// With template strings ES6
+html = `
+  <ul>
+   <li>Name: ${name}</li>
+   <li>Age: ${age}</li>
+   <li>Job: ${job}</li>
+   <li>${2 + 2}</li> 
+   <li> ${hello()}</li>
+   <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
+ </ul>
+`;
+
+
+document.body.innerHTML = html;
