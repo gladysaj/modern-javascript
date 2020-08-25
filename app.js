@@ -28,7 +28,7 @@ console.log(name);
 // Initialize a variable 
 let greeting;
 console.log(greeting); // undefined 
-greeting = 'Hello'
+greeting = 'Hello';
 
 // The only characters that can be inside of a variable = letters, numbers, underscore, $ 
 // Can not start with a number = syntax error
@@ -62,3 +62,49 @@ const numbers = [1,2,3,4,5];
 numbers.push(6);
 
 console.log(numbers)
+
+// DATA TYPES 
+
+// PRIMITIVE DATA TYPES:
+/* 
+Store directly in the location the variable accesses 
+Stored on the stack 
+String, Number, Boolean, Null, Undefined, Symbols (ES6)
+*/
+
+// String
+const name = 'John Doe';
+// Number
+const age = 26;
+// Boolean
+const hasKids = true;
+// Null (object)
+const car = null;
+// Undefined 
+let test; // undefined 
+// Symbol
+const sym = Symbol();
+
+console.log(typeof name);
+
+// REFERENCE DATA TYPES:
+/* 
+Accessed by reference 
+Objects that are stored on the heap 
+A pointer to a location in memory 
+Arrays, Object Literals, Functions, Dates, Anything else 
+*/
+
+   // Arrays
+   const hobbies = [ 'movies', 'music'];
+   
+   // Object literal
+   const address = {
+     city: 'Boston',
+     state: 'MA'
+   }
+
+   const today = new Date();
+   console.log(today);
+
+   console.log(typeof hobbies);
