@@ -1,4 +1,4 @@
-alert('HELLO WORLD ');
+// alert('HELLO WORLD ');
 
 // Log to console
 console.log('Hello Gladys');
@@ -45,7 +45,6 @@ console.log('John');
 name = 'Gladys';
 
 // We have to assign a value always 
-
 const person = {
   name: 'John',
   age: 30
@@ -96,7 +95,7 @@ Arrays, Object Literals, Functions, Dates, Anything else
 */
 
    // Arrays
-   const hobbies = [ 'movies', 'music'];
+   const hobbies = ['movies', 'music'];
    
    // Object literal
    const address = {
@@ -172,17 +171,21 @@ val = num1 / num2;
 val = num1 % num2;
 
 // Math object 
+// this property represents the ratio of the circumference of a circle to its diameter, approx 3.14159
 val = Math.PI;
+// This property represents the base of natural logarithms, e, approximately 2.718.
 val = Math.E;
+// Round to the nearest 
 val = Math.round(2.8);
-// round up 
+// round up no matter what
 val = Math.ceil(2.4);
 // round down
 val = Math.floor(2.8);
+// this function returns the square root of a number, 
 val = Math.sqrt(64);
 // absolute number 
 val = Math.abs(-3); // = will give you the absolute num 3
-
+// this function returns the base to the exponent power
 val = Math.pow(8, 2);
 // return minimum
 val = Math.min(2,33,56,8);
@@ -238,11 +241,11 @@ val = firstName.toUpperCase();
 val = firstName.toLowerCase();
 
 // Get a character 
-val = firstName[2]
+val = firstName[2];
 
 // indexOf() to know the index of a character
 val = firstName.indexOf('l');
-val = firstName.lastIndexOf('l'); // go the other way
+val = firstName.lastIndexOf('l'); // it goes the other way
 
 // charAt() to know the character at that position 
 val = firstName.charAt('2');
@@ -250,18 +253,18 @@ val = firstName.charAt('2');
 // get last character
 val = firstName.charAt(firstName.length -1);
 
-// get substring() to get characters from 0 to 4
+// get substring() to get characters from a point to another
 val = firstName.substring(0, 4);
 
 // slice() to use in strings and arrays 
 val = firstName.slice(0, 4);
 val = firstName.slice(-3); // this will start from the back 
 
-// split() this will turn them into an array
-val = str.split(' ');
-val = tags.split(','); 
+// split() this will turn them into a separated array
+val = str.split(' '); // ex ["G", "l", "a", "d"]
+val = tags.split(',');  // ex ["Glad"]
 
-// replace() replace something inside a string 
+// replace() replace something inside a string (add the original, the new one)
 val = str.replace('Gladys', 'Brad');
 
 // includes() true or false, values are based if something is on the string 
@@ -302,5 +305,79 @@ html = `
  </ul>
 `;
 
-
+// to print in the console all the information 
 document.body.innerHTML = html;
+
+
+// ARRAYS AND ARRAYS METHODS
+
+// Ways to create arrays 
+const newNumbers = [1,2,3,4,5, 45, 56, 67, 90];
+const newNumbers2 = new Array(22, 45, 33,76);
+const fruit = ['apple', 'banana', 'orange', 'pear'];
+const mix = [45, 'hello', true, undefined, null, {a:1, b:1}, new Date()];
+
+let val3;
+
+// Get array length
+val3 = newNumbers.length;
+
+// Check if is array
+val3 = Array.isArray(numbers);
+
+// Get a single value from array  (will return the number in that index passed)
+val3 = newNumbers[3];
+val3 = newNumbers[0];
+
+// Insert into array the number 100 in the index 2
+newNumbers[2] = 100;
+
+// Find index of a value inside the array
+val3 = newNumbers.indexOf(45);
+
+// MUTATING ARRAYS with functions 
+// Add to the end of array - last value
+newNumbers.push(250);
+
+// Add to the front of array - first value
+newNumbers.unshift(120);
+
+// Take off from the end 
+newNumbers.pop();
+
+// Take off from the beggining 
+newNumbers.shift();
+
+// Splice values (where to start and where to end)
+newNumbers.splice(1, 3);
+
+// Reverse array 
+newNumbers.reverse();
+
+// Concatenate array
+val3 = newNumbers.concat(newNumbers2);
+
+// Sorting array in alphabetical order 
+val3 = fruit.sort();
+val3 = newNumbers.sort (); // this is concatenating but just by the first number
+
+// Use the "compare function" to order the numbers taking into account all the values 
+val3 = newNumbers.sort(function(x, y) {
+  return x - y;
+});
+
+// Reverse sort 
+val3 = newNumbers.sort(function(x, y) {
+  return y - x;
+});
+
+// Find 
+function under50(num){
+  return num < 50;
+};
+
+// This just gets the first number under50 in order, make sure it is not sorted 
+val3 = newNumbers.find(under50);
+
+console.log(newNumbers);
+console.log(val3);
