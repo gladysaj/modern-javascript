@@ -419,4 +419,35 @@ const people = [
 
 for(let i = 0; i < people.length; i++){
  console.log(people[i].name);
-}
+};
+
+// DATES AND TIMES
+
+let value;
+
+const today = new Date();
+const birthday = new Date('11-01-1993 03:00:00');
+birthday = new Date('November 1 1993 03:00:00');
+birthday = new Date('11/01/1993');
+
+value = today.getMonth(); // is zero based meaning January will be month 0
+value = today.getDate();
+value = today.getDay(); // numerical representation of the day sun- to mon in numbers 
+value = today.getFullYear() // year
+value = today.getHours(); 
+value = today.getMinutes();
+value = today.getSeconds();
+value = today.getMilliseconds();
+value = today.getTime(); // the amount of seconds passed since January it reloads 
+
+
+birthday.setMonth(2); // Change month 
+birthday.setDate(12); //  change day of month
+birthday.setFullYear(1993);
+birthday.setHours(3);
+birthday.setMinutes(30);
+birthday.setSeconds(29);
+
+value = today.toString; // date to string  use .toString
+console.log(value);
+console.log(typeof value); // will get an object as it is the date 
