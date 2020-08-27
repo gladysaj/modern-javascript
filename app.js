@@ -384,49 +384,49 @@ console.log(val3);
 
 // OBJECT LITERALS 
 
-const newPerson = {
-  firstName: 'Steve',
-  lastName: 'Smith',
-  age: 26,
-  email: 'steve@hotmail.com',
-  hobbies: ['music', 'sports'],
-  address: {
-    city: 'Miami',
-    state: 'FL'
-  },
-  getBirthYear: function() {
-    return 2020 - this.age,
-  }
-};
+// const newPerson = {
+//   firstName: 'Steve',
+//   lastName: 'Smith',
+//   age: 26,
+//   email: 'steve@hotmail.com',
+//   hobbies: ['music', 'sports'],
+//   address: {
+//     city: 'Miami',
+//     state: 'FL'
+//   },
+//   getBirthYear: function() {
+//     return 2020 - this.age,
+//   }
+// };
 
-let val;
-val = newPerson;
+// let val;
+// val = newPerson;
 
 // Get specific value 
-val = newPerson['firstName'];
-val = newPerson.firstName;
-val = newPerson.age;
-val = newPerson.hobbies[1]; // to select a specifi value with the index
-val = newPerson.address['city'];
-val = newPerson.getBirthYear();
+// val = newPerson['firstName'];
+// val = newPerson.firstName;
+// val = newPerson.age;
+// val = newPerson.hobbies[1]; // to select a specifi value with the index
+// val = newPerson.address['city'];
+// val = newPerson.getBirthYear();
 
-console.log(val);
+// console.log(val);
 
-const people = [
-  {name: 'John', age: 30},
-  {name: 'Mike', age: 25}
-];
+// const people = [
+//   {name: 'John', age: 30},
+//   {name: 'Mike', age: 25}
+// ];
 
-for(let i = 0; i < people.length; i++){
- console.log(people[i].name);
-};
+// for(let i = 0; i < people.length; i++){
+//  console.log(people[i].name);
+// };
 
 // DATES AND TIMES
 
 let value;
 
-const today = new Date();
-const birthday = new Date('11-01-1993 03:00:00');
+// const today = new Date();
+let birthday = new Date('11-01-1993 03:00:00');
 birthday = new Date('November 1 1993 03:00:00');
 birthday = new Date('11/01/1993');
 
@@ -451,3 +451,84 @@ birthday.setSeconds(29);
 value = today.toString; // date to string  use .toString
 console.log(value);
 console.log(typeof value); // will get an object as it is the date 
+
+// IF STATEMENTS & COMPARISON OPERATORS 
+
+const id = 100; 
+
+// EQUAL TO
+// if(id == 102){
+//   console.log('Correct')
+// } else {
+//   console.log('Incorrect')
+// };
+
+// NOT EQUAL TO
+// if(id !== 200){
+//   console.log('Correct')
+// } else {
+//   console.log('Incorrect')
+// };
+
+// EQUAL TO VALUE AND SIGN  (with === it will evaluate the value too for example if it is a String)
+// if(id === 100){
+//   console.log('Correct')
+// } else {
+//   console.log('Incorrect')
+// };
+
+// TEST IF VALUE IS UNDEFINED 
+// if(typeof id !== 'undefined'){
+//   console.log(`This is the ID: ${id}`);
+// } else {
+//   console.log(`There is no ID`);
+// }
+
+// GREATER THAN OR LESS THAN (>, <, <=, >=, )
+ if(id => 200){
+  console.log('Correct')
+} else {
+  console.log('Incorrect')
+};
+
+// IF ELSE
+const color = 'Red';
+
+if(color === 'Red'){
+  console.log(`Color is red`);
+} else if(color === 'Blue') {
+  console.log(`Color is blue`);
+} else {
+  console.log('Color is not red or blue');
+};
+
+// LOGICAL OPERATORS 
+const userName = 'Gladys';
+const age1 = 90;
+
+// AND &&
+if(age1 > 0 && age < 12){
+  console.log(`${userName} is a child`);
+} else if(age1 >= 13 && age1 <= 19){
+  console.log(`${userName} is a teenager`);
+} else {
+  console.log(`${userName} is an adult`);
+};
+
+// OR ||
+if(age < 16 || age > 65){
+  console.log(`${name} can not run in race`);
+} else {
+  console.log(`${name} is registered for the race`);
+};
+
+// TERNARY OPERATOR <3
+console.log(id === 100 ? 'Correct' : 'Incorrect');
+
+// WITHOUT BRACES (not suggested)
+if(id === 105)
+  console.log('Correct');
+else 
+  console.log('INCORRECT');
+
+  
