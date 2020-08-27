@@ -381,3 +381,42 @@ val3 = newNumbers.find(under50);
 
 console.log(newNumbers);
 console.log(val3);
+
+// OBJECT LITERALS 
+
+const newPerson = {
+  firstName: 'Steve',
+  lastName: 'Smith',
+  age: 26,
+  email: 'steve@hotmail.com',
+  hobbies: ['music', 'sports'],
+  address: {
+    city: 'Miami',
+    state: 'FL'
+  },
+  getBirthYear: function() {
+    return 2020 - this.age,
+  }
+};
+
+let val;
+val = newPerson;
+
+// Get specific value 
+val = newPerson['firstName'];
+val = newPerson.firstName;
+val = newPerson.age;
+val = newPerson.hobbies[1]; // to select a specifi value with the index
+val = newPerson.address['city'];
+val = newPerson.getBirthYear();
+
+console.log(val);
+
+const people = [
+  {name: 'John', age: 30},
+  {name: 'Mike', age: 25}
+];
+
+for(let i = 0; i < people.length; i++){
+ console.log(people[i].name);
+}
