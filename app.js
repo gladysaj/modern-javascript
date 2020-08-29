@@ -623,3 +623,81 @@ todo.add();
 todo.edit(22);
 todo.delete();
 
+
+// GENERAL LOOPS 
+
+// For loop (use it when you know how many times it will run)
+// declare variable, condition , increment
+for(let i = 0; i < 10; i++){
+  if(i === 2){
+    console.log('Two is my favorite number');
+    continue; // to keep going with the next iteration don't repeat two
+  }
+  if(i === 5){
+    console.log('Stop the loop');
+    break;
+  }
+    console.log('Number' + i);
+};
+
+// While loop
+// Just add the condition 
+// let i = 0;
+
+// while(i < 10){
+//   console.log('Number' + i);
+//   i++;
+// }; 
+
+// DO WHILE (this runs always one time no matter what)
+
+// let i = 0;
+
+// do {
+//   console.log('Number ' + i);
+//   i++;
+// }
+// while (i < 10);
+
+
+// LOOP THROUGH ARRAY 
+
+const cars = ['Ford', 'Chevy', 'Honda'];
+// cars[1];
+
+// for(let i = 0; i < cars.length; i++){
+//   console.log(cars[1]);
+// };
+
+// FOREACH LOOP TRHOUGH ARRAY
+// it can take the iterator and the index
+cars.forEach(function(car, index){
+  console.log(`${index} : ${car}`);
+  console.log(array); // to access the whole array
+});
+
+// MAP = to return a different array
+
+const users = [
+  {id: 1, name: 'Sara'},
+  {id: 2, name: 'Sara2'},
+  {id: 3, name: 'Sara3'},
+];
+
+const ids = users.map(function(user){
+   return user.id;
+});
+
+console.log(ids);
+
+// FOR IN LOOP FOR OBJECTS
+// inside of an object a key and value pair 
+// const user = {
+//   firstName = 'Polansky',
+//   lastName = 'Doe',
+//   age: 25
+// };
+
+// for(let x in user ){
+//  console.log(`${x} : ${user[x]}`); // x just will give us the key 'firstName'
+// };
