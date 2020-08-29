@@ -673,7 +673,7 @@ const cars = ['Ford', 'Chevy', 'Honda'];
 // it can take the iterator and the index
 cars.forEach(function(car, index){
   console.log(`${index} : ${car}`);
-  console.log(array); // to access the whole array
+  // console.log(array); // to access the whole array
 });
 
 // MAP = to return a different array
@@ -701,3 +701,69 @@ console.log(ids);
 // for(let x in user ){
 //  console.log(`${x} : ${user[x]}`); // x just will give us the key 'firstName'
 // };
+
+// WINDOW OBJECT -- DOM
+// Window methods / objects / properties 
+
+// window.console.log(123);
+
+// Alert
+// window.alert('HI');
+
+// Prompt 
+// const input = prompt();
+// alert(input);
+
+// Confirm 
+// if(confirm('Are you sure')){
+//   console.log('yes');
+// } else {
+//   console.log('no');
+// };
+
+// Properties
+let valuee;
+
+// Outter height and width
+valuee = window.outerHeight;
+valuee = window.outerWidth;
+
+// Inner height and width
+valuee = window.innerHeight;
+valuee = window.innerWidth;
+
+// Scroll Points 
+vall = window.scrollY;
+
+// Location Object
+val = window.location;
+val = window.location.hostname; 
+val = window.location.port; 
+val = window.location.href; 
+val = window.location.search;  // what is add to the search bar in the link
+
+// Redirect
+// window.location.href = 'http://google.com';
+
+// Reload
+// window.location.reload();
+
+// History Object 
+window.history.go(-1); // it depends on the number to the page it will go back in the history
+length = window.history.length;
+
+// Navigator Object
+valv = window.navigator;
+valv = window.navigator.appName;
+valv = window.navigator.appversion;
+valv = window.navigator.userAgent;
+valv = window.navigator.platform;
+valv = window.navigator.vendor;
+valv = window.navigator.language;
+
+
+console.log(valuee);
+console.log(vall);
+console.log(val);
+console.log(valv)
+console.log(length)
