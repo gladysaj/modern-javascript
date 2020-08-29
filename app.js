@@ -1,14 +1,14 @@
 // alert('HELLO WORLD ');
 
 // Log to console
-console.log('Hello Gladys');
-console.log(233);
-console.log(true);
-var greeting = 'Hello';
-console.log(greeting);
-console.log([1,2,3,4]);
-console.log({a:1, a:2});
-console.table({a:1, a:2})
+// console.log('Hello Gladys');
+// console.log(233);
+// console.log(true);
+// var greeting = 'Hello';
+// console.log(greeting);
+// console.log([1,2,3,4]);
+// console.log({a:1, a:2});
+// console.table({a:1, a:2})
 
 /*
 multi line 
@@ -18,49 +18,49 @@ comments
 //Variables var, let, const 
 
 // Declare a variable 
-let name = 'Gladys';
-console.log(name);
+// let name = 'Gladys';
+// console.log(name);
 
 // Modify a variable 
-name = 'John Doe';
-console.log(name);
+// name = 'John Doe';
+// console.log(name);
 
 // Initialize a variable 
 // let greeting;
-console.log(greeting); // undefined 
-greeting = 'Hello';
+// console.log(greeting); // undefined 
+// greeting = 'Hello';
 
 // The only characters that can be inside of a variable = letters, numbers, underscore, $ 
 // Can not start with a number = syntax error
 // Multi word variables 
-let firstName = '' // Camel case 
-let first_name = '' // Underscore  (mostly used in PHP)
-let FirstName = '' // Pascal case (for a constructor function, create a class)
+// let firstName = '' // Camel case 
+// let first_name = '' // Underscore  (mostly used in PHP)
+// let FirstName = '' // Pascal case (for a constructor function, create a class)
 
 // Const 
 // const name = 'John';
-console.log('John');
+// console.log('John');
 
 //Can not reassign
-name = 'Gladys';
+// name = 'Gladys';
 
 // We have to assign a value always 
-const person = {
-  name: 'John',
-  age: 30
-}
+// const person = {
+//   name: 'John',
+//   age: 30
+// }
 
 // Way to reassign 
-person.name = 'Gladys';
-person.age = 26;
+// person.name = 'Gladys';
+// person.age = 26;
 
-console.log(person);
+// console.log(person);
 
 // Add number to array
-const numbers = [1,2,3,4,5];
-numbers.push(6);
+// const numbers = [1,2,3,4,5];
+// numbers.push(6);
 
-console.log(numbers)
+// console.log(numbers)
 
 // DATA TYPES 
 
@@ -74,17 +74,17 @@ String, Number, Boolean, Null, Undefined, Symbols (ES6)
 // String
 // const name = 'John Doe';
 // Number
-const age = 26;
+// const age = 26;
 // Boolean
-const hasKids = true;
+// const hasKids = true;
 // Null (object)
-const car = null;
+// const car = null;
 // Undefined 
-let test; // undefined 
+// let test; // undefined 
 // Symbol
-const sym = Symbol();
+// const sym = Symbol();
 
-console.log(typeof name);
+// console.log(typeof name);
 
 // REFERENCE DATA TYPES:
 /* 
@@ -95,292 +95,292 @@ Arrays, Object Literals, Functions, Dates, Anything else
 */
 
    // Arrays
-   const hobbies = ['movies', 'music'];
+  //  const hobbies = ['movies', 'music'];
    
    // Object literal
-   const address = {
-     city: 'Boston',
-     state: 'MA'
-   }
+  //  const address = {
+  //    city: 'Boston',
+  //    state: 'MA'
+  //  }
 
-   const today = new Date();
-   console.log(today);
+  //  const today = new Date();
+  //  console.log(today);
 
-   console.log(typeof hobbies);
+  //  console.log(typeof hobbies);
 
    // TYPE CONVERSION (changing the type of a variable)
 
-   let val;
+  //  let val;
 
    // Number to String
-   val = String(5);
-   val = String(5+5);
+  //  val = String(5);
+  //  val = String(5+5);
 
    // Boolean to String
-   val = String(true);
+  //  val = String(true);
 
    // Date to String 
-   val = String(new Date());
+  //  val = String(new Date());
 
    // Array to String
-   val = String([1,2,3,4]);
+  //  val = String([1,2,3,4]);
 
    // toString() method
-   val = (5).toString();
-   val = (true).toString();
+  //  val = (5).toString();
+  //  val = (true).toString();
 
    // String to Number 
-   val = Number('5');
-   val = Number(true); // = 1
-   val = Number(false); // = 0
-   val = Number(null); // = 0
-   val = Number('Hello'); // NaN
-   val = Number([1,2,3]); //= NaN
+  //  val = Number('5');
+  //  val = Number(true); // = 1
+  //  val = Number(false); // = 0
+  //  val = Number(null); // = 0
+  //  val = Number('Hello'); // NaN
+  //  val = Number([1,2,3]); //= NaN
 
    // Always leave it without decimals 
-   val = parseInt('100.30'); // = 100
+  //  val = parseInt('100.30'); // = 100
    // Use decimals 
-   val = parseFloat('100.30'); // = 100.3 (withouth the last 0, to added it you can use toFixed(2))
+  //  val = parseFloat('100.30'); // = 100.3 (withouth the last 0, to added it you can use toFixed(2))
 
    // Output 
-   console.log(val);
-   console.log(typeof val)
-   console.log(val.length) // only works on strings to give you the number of characters
-   console.log(val.toFixed()); // only works with numbers, you can specify decimals 
+  //  console.log(val);
+  //  console.log(typeof val)
+  //  console.log(val.length) // only works on strings to give you the number of characters
+  //  console.log(val.toFixed()); // only works with numbers, you can specify decimals 
 
 
-   const val1 = 5; // this can be = 56 if we use String()
-   const val2 = 6;
-   const sum = val1 + val2;
+  //  const val1 = 5; // this can be = 56 if we use String()
+  //  const val2 = 6;
+  //  const sum = val1 + val2;
 
-   console.log(sum); // = 11
-   console.log(typeof sum); // = number
+  //  console.log(sum); // = 11
+  //  console.log(typeof sum); // = number
 
 
 // NUMBERS AND THE MATH OBJECT 
 
-const num1 = 100;
-const num2 = 50;
+// const num1 = 100;
+// const num2 = 50;
 // let val;
 
 // Simple math with numbers
-val = num1 + num2;
-val = num1 * num2;
-val = num1 - num2;
-val = num1 / num2;
-val = num1 % num2;
+// val = num1 + num2;
+// val = num1 * num2;
+// val = num1 - num2;
+// val = num1 / num2;
+// val = num1 % num2;
 
 // Math object 
 // this property represents the ratio of the circumference of a circle to its diameter, approx 3.14159
-val = Math.PI;
+// val = Math.PI;
 // This property represents the base of natural logarithms, e, approximately 2.718.
-val = Math.E;
+// val = Math.E;
 // Round to the nearest 
-val = Math.round(2.8);
+// val = Math.round(2.8);
 // round up no matter what
-val = Math.ceil(2.4);
+// val = Math.ceil(2.4);
 // round down
-val = Math.floor(2.8);
+// val = Math.floor(2.8);
 // this function returns the square root of a number, 
-val = Math.sqrt(64);
+// val = Math.sqrt(64);
 // absolute number 
-val = Math.abs(-3); // = will give you the absolute num 3
+// val = Math.abs(-3); // = will give you the absolute num 3
 // this function returns the base to the exponent power
-val = Math.pow(8, 2);
+// val = Math.pow(8, 2);
 // return minimum
-val = Math.min(2,33,56,8);
-val = Math.max(2,33,56,8);
+// val = Math.min(2,33,56,8);
+// val = Math.max(2,33,56,8);
 // get a random decimal number
-val = Math.random();
+// val = Math.random();
 // random number with decimal and between 0 to 20
-val = Math.random() * 20;
+// val = Math.random() * 20;
 // get random number without decimals 
-val = Math.floor(Math.random() * 20 +1);
+// val = Math.floor(Math.random() * 20 +1);
 
 /* Math is an object = it has properties and methods 
 Properties = an attribute
 Method = a function inside of an object 
 */
 
-console.log(val);
+// console.log(val);
 
 
 // STRING METHODS AND CONCATENATION 
 
 
 // const firstName = 'William';
-const lastName = 'Johnson';
+// const lastName = 'Johnson';
 // const age = 50;
-const str = 'Hello my name is Gladys';
-const tags = 'web desing, ux, ui';
+// const str = 'Hello my name is Gladys';
+// const tags = 'web desing, ux, ui';
 
 // let val;
 
-val = firstName + lastName;
+// val = firstName + lastName;
 
 // Concatenation
-val = firstName + '' + lastName;
+// val = firstName + '' + lastName;
 
 // Append  (add but not replace)
-val = 'Gladys';
-val += 'Alvarez';
+// val = 'Gladys';
+// val += 'Alvarez';
 
-val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+// val = 'Hello, my name is ' + firstName + ' and I am ' + age;
 
 // Escaping  (to be able to use ' in a sentence, use "" or \)
-val = "That's awesome , i can't wait"
+// val = "That's awesome , i can't wait"
 
 // Length property
-val = firstName.length;
+// val = firstName.length;
 
 // concat() method to separate
-val = firstName.concat(' ', lastName);
+// val = firstName.concat(' ', lastName);
 
 // Change case 
-val = firstName.toUpperCase();
-val = firstName.toLowerCase();
+// val = firstName.toUpperCase();
+// val = firstName.toLowerCase();
 
 // Get a character 
-val = firstName[2];
+// val = firstName[2];
 
 // indexOf() to know the index of a character
-val = firstName.indexOf('l');
-val = firstName.lastIndexOf('l'); // it goes the other way
+// val = firstName.indexOf('l');
+// val = firstName.lastIndexOf('l'); // it goes the other way
 
 // charAt() to know the character at that position 
-val = firstName.charAt('2');
+// val = firstName.charAt('2');
 
 // get last character
-val = firstName.charAt(firstName.length -1);
+// val = firstName.charAt(firstName.length -1);
 
 // get substring() to get characters from a point to another
-val = firstName.substring(0, 4);
+// val = firstName.substring(0, 4);
 
 // slice() to use in strings and arrays 
-val = firstName.slice(0, 4);
-val = firstName.slice(-3); // this will start from the back 
+// val = firstName.slice(0, 4);
+// val = firstName.slice(-3); // this will start from the back 
 
 // split() this will turn them into a separated array
-val = str.split(' '); // ex ["G", "l", "a", "d"]
-val = tags.split(',');  // ex ["Glad"]
+// val = str.split(' '); // ex ["G", "l", "a", "d"]
+// val = tags.split(',');  // ex ["Glad"]
 
 // replace() replace something inside a string (add the original, the new one)
-val = str.replace('Gladys', 'Brad');
+// val = str.replace('Gladys', 'Brad');
 
 // includes() true or false, values are based if something is on the string 
-val = str.includes('Hello');
+// val = str.includes('Hello');
 
 
 // TEMPLATE LITERALS 
 
 // const name = 'John';
 // const age = 30;
-const job = 'Web developer';
-const city = 'Miami';
-let html;
+// const job = 'Web developer';
+// const city = 'Miami';
+// let html;
 
 // Without template strings ES5
-html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + ' </li><li>Job: ' + job + '</li><li>City:' 
-+ city + '</li><ul>';
+// html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + ' </li><li>Job: ' + job + '</li><li>City:' 
+// + city + '</li><ul>';
 
 // Same as 
-html = '<ul>' +
-        '<li>Name: ' + name + '</li>' +
-        '<li>Age: ' + age + ' </li>' +
-        '</ul>';
+// html = '<ul>' +
+//         '<li>Name: ' + name + '</li>' +
+//         '<li>Age: ' + age + ' </li>' +
+//         '</ul>';
 
-function hello() {
-  return 'hello';
-}
+// function hello() {
+//   return 'hello';
+// }
 
 // With template strings ES6
-html = `
-  <ul>
-   <li>Name: ${name}</li>
-   <li>Age: ${age}</li>
-   <li>Job: ${job}</li>
-   <li>${2 + 2}</li> 
-   <li> ${hello()}</li>
-   <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
- </ul>
-`;
+// html = `
+//   <ul>
+//    <li>Name: ${name}</li>
+//    <li>Age: ${age}</li>
+//    <li>Job: ${job}</li>
+//    <li>${2 + 2}</li> 
+//    <li> ${hello()}</li>
+//    <li>${age > 30 ? 'Over 30' : 'Under 30'}</li>
+//  </ul>
+// `;
 
 // to print in the console all the information 
-document.body.innerHTML = html;
+// document.body.innerHTML = html;
 
 
 // ARRAYS AND ARRAYS METHODS
 
 // Ways to create arrays 
-const newNumbers = [1,2,3,4,5, 45, 56, 67, 90];
-const newNumbers2 = new Array(22, 45, 33,76);
-const fruit = ['apple', 'banana', 'orange', 'pear'];
-const mix = [45, 'hello', true, undefined, null, {a:1, b:1}, new Date()];
+// const newNumbers = [1,2,3,4,5, 45, 56, 67, 90];
+// const newNumbers2 = new Array(22, 45, 33,76);
+// const fruit = ['apple', 'banana', 'orange', 'pear'];
+// const mix = [45, 'hello', true, undefined, null, {a:1, b:1}, new Date()];
 
-let val3;
+// let val3;
 
 // Get array length
-val3 = newNumbers.length;
+// val3 = newNumbers.length;
 
 // Check if is array
-val3 = Array.isArray(numbers);
+// val3 = Array.isArray(numbers);
 
 // Get a single value from array  (will return the number in that index passed)
-val3 = newNumbers[3];
-val3 = newNumbers[0];
+// val3 = newNumbers[3];
+// val3 = newNumbers[0];
 
 // Insert into array the number 100 in the index 2
-newNumbers[2] = 100;
+// newNumbers[2] = 100;
 
 // Find index of a value inside the array
-val3 = newNumbers.indexOf(45);
+// val3 = newNumbers.indexOf(45);
 
 // MUTATING ARRAYS with functions 
 // Add to the end of array - last value
-newNumbers.push(250);
+// newNumbers.push(250);
 
 // Add to the front of array - first value
-newNumbers.unshift(120);
+// newNumbers.unshift(120);
 
 // Take off from the end 
-newNumbers.pop();
+// newNumbers.pop();
 
 // Take off from the beggining 
-newNumbers.shift();
+// newNumbers.shift();
 
 // Splice values (where to start and where to end)
-newNumbers.splice(1, 3);
+// newNumbers.splice(1, 3);
 
 // Reverse array 
-newNumbers.reverse();
+// newNumbers.reverse();
 
 // Concatenate array
-val3 = newNumbers.concat(newNumbers2);
+// val3 = newNumbers.concat(newNumbers2);
 
 // Sorting array in alphabetical order 
-val3 = fruit.sort();
-val3 = newNumbers.sort (); // this is concatenating but just by the first number
+// val3 = fruit.sort();
+// val3 = newNumbers.sort (); // this is concatenating but just by the first number
 
 // Use the "compare function" to order the numbers taking into account all the values 
-val3 = newNumbers.sort(function(x, y) {
-  return x - y;
-});
+// val3 = newNumbers.sort(function(x, y) {
+//   return x - y;
+// });
 
-// Reverse sort 
-val3 = newNumbers.sort(function(x, y) {
-  return y - x;
-});
+// // Reverse sort 
+// val3 = newNumbers.sort(function(x, y) {
+//   return y - x;
+// });
 
 // Find 
-function under50(num){
-  return num < 50;
-};
+// function under50(num){
+//   return num < 50;
+// };
 
 // This just gets the first number under50 in order, make sure it is not sorted 
-val3 = newNumbers.find(under50);
+// val3 = newNumbers.find(under50);
 
-console.log(newNumbers);
-console.log(val3);
+// console.log(newNumbers);
+// console.log(val3);
 
 // OBJECT LITERALS 
 
@@ -423,38 +423,38 @@ console.log(val3);
 
 // DATES AND TIMES
 
-let value;
+// let value;
 
 // const today = new Date();
-let birthday = new Date('11-01-1993 03:00:00');
-birthday = new Date('November 1 1993 03:00:00');
-birthday = new Date('11/01/1993');
+// let birthday = new Date('11-01-1993 03:00:00');
+// birthday = new Date('November 1 1993 03:00:00');
+// birthday = new Date('11/01/1993');
 
-value = today.getMonth(); // is zero based meaning January will be month 0
-value = today.getDate();
-value = today.getDay(); // numerical representation of the day sun- to mon in numbers 
-value = today.getFullYear() // year
-value = today.getHours(); 
-value = today.getMinutes();
-value = today.getSeconds();
-value = today.getMilliseconds();
-value = today.getTime(); // the amount of seconds passed since January it reloads 
+// value = today.getMonth(); // is zero based meaning January will be month 0
+// value = today.getDate();
+// value = today.getDay(); // numerical representation of the day sun- to mon in numbers 
+// value = today.getFullYear() // year
+// value = today.getHours(); 
+// value = today.getMinutes();
+// value = today.getSeconds();
+// value = today.getMilliseconds();
+// value = today.getTime(); // the amount of seconds passed since January it reloads 
 
 
-birthday.setMonth(2); // Change month 
-birthday.setDate(12); //  change day of month
-birthday.setFullYear(1993);
-birthday.setHours(3);
-birthday.setMinutes(30);
-birthday.setSeconds(29);
+// birthday.setMonth(2); // Change month 
+// birthday.setDate(12); //  change day of month
+// birthday.setFullYear(1993);
+// birthday.setHours(3);
+// birthday.setMinutes(30);
+// birthday.setSeconds(29);
 
-value = today.toString; // date to string  use .toString
-console.log(value);
-console.log(typeof value); // will get an object as it is the date 
+// value = today.toString; // date to string  use .toString
+// console.log(value);
+// console.log(typeof value); // will get an object as it is the date 
 
 // IF STATEMENTS & COMPARISON OPERATORS 
 
-const id = 100; 
+// const id = 100; 
 
 // EQUAL TO
 // if(id == 102){
@@ -485,160 +485,160 @@ const id = 100;
 // }
 
 // GREATER THAN OR LESS THAN (>, <, <=, >=, )
- if(id => 200){
-  console.log('Correct')
-} else {
-  console.log('Incorrect')
-};
+//  if(id => 200){
+//   console.log('Correct')
+// } else {
+//   console.log('Incorrect')
+// };
 
 // IF ELSE
-const color = 'Red';
+// const color = 'Red';
 
-if(color === 'Red'){
-  console.log(`Color is red`);
-} else if(color === 'Blue') {
-  console.log(`Color is blue`);
-} else {
-  console.log('Color is not red or blue');
-};
+// if(color === 'Red'){
+//   console.log(`Color is red`);
+// } else if(color === 'Blue') {
+//   console.log(`Color is blue`);
+// } else {
+//   console.log('Color is not red or blue');
+// };
 
 // LOGICAL OPERATORS 
-const userName = 'Gladys';
-const age1 = 90;
+// const userName = 'Gladys';
+// const age1 = 90;
 
 // AND &&
-if(age1 > 0 && age < 12){
-  console.log(`${userName} is a child`);
-} else if(age1 >= 13 && age1 <= 19){
-  console.log(`${userName} is a teenager`);
-} else {
-  console.log(`${userName} is an adult`);
-};
+// if(age1 > 0 && age < 12){
+//   console.log(`${userName} is a child`);
+// } else if(age1 >= 13 && age1 <= 19){
+//   console.log(`${userName} is a teenager`);
+// } else {
+//   console.log(`${userName} is an adult`);
+// };
 
 // OR ||
-if(age < 16 || age > 65){
-  console.log(`${name} can not run in race`);
-} else {
-  console.log(`${name} is registered for the race`);
-};
+// if(age < 16 || age > 65){
+//   console.log(`${name} can not run in race`);
+// } else {
+//   console.log(`${name} is registered for the race`);
+// };
 
-// TERNARY OPERATOR <3
-console.log(id === 100 ? 'Correct' : 'Incorrect');
+// // TERNARY OPERATOR <3
+// console.log(id === 100 ? 'Correct' : 'Incorrect');
 
-// WITHOUT BRACES (not suggested)
-if(id === 105)
-  console.log('Correct');
-else 
-  console.log('INCORRECT');
+// // WITHOUT BRACES (not suggested)
+// if(id === 105)
+//   console.log('Correct');
+// else 
+//   console.log('INCORRECT');
 
 
-// SWITCHES (another way to validate conditions)
-// Use this instead of plenty of else if's
-const colored = 'blue';
+// // SWITCHES (another way to validate conditions)
+// // Use this instead of plenty of else if's
+// const colored = 'blue';
 
-switch(colored){
-  case 'red':
-    console.log('Color is red');
-    break;
-  case 'blue':
-    console.log('Color is blue');
-    break;
-  default:
-    console.log('Color is not red or blue')
-};
+// switch(colored){
+//   case 'red':
+//     console.log('Color is red');
+//     break;
+//   case 'blue':
+//     console.log('Color is blue');
+//     break;
+//   default:
+//     console.log('Color is not red or blue')
+// };
 
-// GET DAY OF THE WEEK
+// // GET DAY OF THE WEEK
 
-let day;
+// let day;
 
-switch(new Date().getDay()){
-  case 0:
-    day = 'Sunday';
-    break;
-  case 1:
-    day = 'Monday';
-    break;
-  case 2:
-    day = 'Tuesday';
-    break;
-  case 3:
-    day = 'Thursday';
-    break;
-  case 4:
-    day = 'Friday';
-    break;
-  case 5:
-    day = 'Saturday';
-    break;
-}
+// switch(new Date().getDay()){
+//   case 0:
+//     day = 'Sunday';
+//     break;
+//   case 1:
+//     day = 'Monday';
+//     break;
+//   case 2:
+//     day = 'Tuesday';
+//     break;
+//   case 3:
+//     day = 'Thursday';
+//     break;
+//   case 4:
+//     day = 'Friday';
+//     break;
+//   case 5:
+//     day = 'Saturday';
+//     break;
+// }
 
-console.log(`Today is ${day}`);
+// console.log(`Today is ${day}`);
 
 
 // FUNCTION DECLARATIONS & EXPRESSIONS 
 
-function greet(firstName = 'Gladys', lastName = 'Doe') {
+// function greet(firstName = 'Gladys', lastName = 'Doe') {
   // console.log('Hello')
   // if(typeof firstName === 'undefined'){firstName === 'Gladys'}
   // if(typeof lastName === 'undefined'){lastName === 'Doe'}
-  return 'HELLO ' + firstName + ' ' +lastName;
-};
+//   return 'HELLO ' + firstName + ' ' +lastName;
+// };
 
-console.log(greet());
+// console.log(greet());
 
 // FUNCTION EXPRESSIONS
 
-const square = function(x = 3){
-  return x*x;
-};
+// const square = function(x = 3){
+//   return x*x;
+// };
 
-console.log(square(8));
+// console.log(square(8));
 
-// IMMEDIATELY INVOCABLE FUNCTION EXPRESSIONS = IIFEs
+// // IMMEDIATELY INVOCABLE FUNCTION EXPRESSIONS = IIFEs
 
-(function(){
-   console.log('IIFE')
-})();
+// (function(){
+//    console.log('IIFE')
+// })();
 
-(function(name){
-  console.log('Hello ' + name)
-})('Brad');
+// (function(name){
+//   console.log('Hello ' + name)
+// })('Brad');
 
-// PROPERTY METHODS - A function inside of an object 
+// // PROPERTY METHODS - A function inside of an object 
 
-const todo = {
-  add: function(){
-    console.log('Add todo..')
-  },
-  edit: function(id){
-    console.log(`Edit todo ${id}`)
-  }
-};
+// const todo = {
+//   add: function(){
+//     console.log('Add todo..')
+//   },
+//   edit: function(id){
+//     console.log(`Edit todo ${id}`)
+//   }
+// };
 
-todo.delete = function(){
-  console.log('Delete todo...')
-};
+// todo.delete = function(){
+//   console.log('Delete todo...')
+// };
 
-todo.add();
-todo.edit(22);
-todo.delete();
+// todo.add();
+// todo.edit(22);
+// todo.delete();
 
 
 // GENERAL LOOPS 
 
 // For loop (use it when you know how many times it will run)
 // declare variable, condition , increment
-for(let i = 0; i < 10; i++){
-  if(i === 2){
-    console.log('Two is my favorite number');
-    continue; // to keep going with the next iteration don't repeat two
-  }
-  if(i === 5){
-    console.log('Stop the loop');
-    break;
-  }
-    console.log('Number' + i);
-};
+// for(let i = 0; i < 10; i++){
+//   if(i === 2){
+//     console.log('Two is my favorite number');
+//     continue; // to keep going with the next iteration don't repeat two
+//   }
+//   if(i === 5){
+//     console.log('Stop the loop');
+//     break;
+//   }
+//     console.log('Number' + i);
+// };
 
 // While loop
 // Just add the condition 
@@ -662,7 +662,7 @@ for(let i = 0; i < 10; i++){
 
 // LOOP THROUGH ARRAY 
 
-const cars = ['Ford', 'Chevy', 'Honda'];
+// const cars = ['Ford', 'Chevy', 'Honda'];
 // cars[1];
 
 // for(let i = 0; i < cars.length; i++){
@@ -671,24 +671,24 @@ const cars = ['Ford', 'Chevy', 'Honda'];
 
 // FOREACH LOOP TRHOUGH ARRAY
 // it can take the iterator and the index
-cars.forEach(function(car, index){
-  console.log(`${index} : ${car}`);
+// cars.forEach(function(car, index){
+//   console.log(`${index} : ${car}`);
   // console.log(array); // to access the whole array
-});
+// });
 
 // MAP = to return a different array
 
-const users = [
-  {id: 1, name: 'Sara'},
-  {id: 2, name: 'Sara2'},
-  {id: 3, name: 'Sara3'},
-];
+// const users = [
+//   {id: 1, name: 'Sara'},
+//   {id: 2, name: 'Sara2'},
+//   {id: 3, name: 'Sara3'},
+// ];
 
-const ids = users.map(function(user){
-   return user.id;
-});
+// const ids = users.map(function(user){
+//    return user.id;
+// });
 
-console.log(ids);
+// console.log(ids);
 
 // FOR IN LOOP FOR OBJECTS
 // inside of an object a key and value pair 
@@ -722,25 +722,25 @@ console.log(ids);
 // };
 
 // Properties
-let valuee;
+// let valuee;
 
 // Outter height and width
-valuee = window.outerHeight;
-valuee = window.outerWidth;
+// valuee = window.outerHeight;
+// valuee = window.outerWidth;
 
 // Inner height and width
-valuee = window.innerHeight;
-valuee = window.innerWidth;
+// valuee = window.innerHeight;
+// valuee = window.innerWidth;
 
 // Scroll Points 
-vall = window.scrollY;
+// vall = window.scrollY;
 
 // Location Object
-val = window.location;
-val = window.location.hostname; 
-val = window.location.port; 
-val = window.location.href; 
-val = window.location.search;  // what is add to the search bar in the link
+// val = window.location;
+// val = window.location.hostname; 
+// val = window.location.port; 
+// val = window.location.href; 
+// val = window.location.search;  // what is add to the search bar in the link
 
 // Redirect
 // window.location.href = 'http://google.com';
@@ -749,21 +749,53 @@ val = window.location.search;  // what is add to the search bar in the link
 // window.location.reload();
 
 // History Object 
-window.history.go(-1); // it depends on the number to the page it will go back in the history
-length = window.history.length;
+// window.history.go(-1); // it depends on the number to the page it will go back in the history
+// length = window.history.length;
 
 // Navigator Object
-valv = window.navigator;
-valv = window.navigator.appName;
-valv = window.navigator.appversion;
-valv = window.navigator.userAgent;
-valv = window.navigator.platform;
-valv = window.navigator.vendor;
-valv = window.navigator.language;
+// valv = window.navigator;
+// valv = window.navigator.appName;
+// valv = window.navigator.appversion;
+// valv = window.navigator.userAgent;
+// valv = window.navigator.platform;
+// valv = window.navigator.vendor;
+// valv = window.navigator.language;
 
 
-console.log(valuee);
-console.log(vall);
-console.log(val);
-console.log(valv)
-console.log(length)
+// console.log(valuee);
+// console.log(vall);
+// console.log(val);
+// console.log(valv)
+// console.log(length)
+
+
+// BLOCK SCOPE WITH LET AND CONST 
+// Global scope
+// var a = 1;
+// let b = 2;
+// const c = 3;
+
+// function test(){
+//   var a = 4;
+//   let b = 5;
+//   const c = 6;
+//   console.log('Function scope ', a, b, c)
+// };
+
+// test();
+
+// if(true) {
+ // Block scope
+//  var a = 4;
+//  let b = 5;
+//  const c = 6;
+//  console.log('If scope ', a, b, c) // result now iw taking a from the block and b , c from global 
+// }
+
+
+// for(var a = 0; a < 10; a++) { // this will change if it is var (let and const have a block scope)
+//  console.log(`Loop ${a}`);
+// }
+
+// console.log('Global scope ', a, b, c);
+
