@@ -574,3 +574,52 @@ switch(new Date().getDay()){
 
 console.log(`Today is ${day}`);
 
+
+// FUNCTION DECLARATIONS & EXPRESSIONS 
+
+function greet(firstName = 'Gladys', lastName = 'Doe') {
+  // console.log('Hello')
+  // if(typeof firstName === 'undefined'){firstName === 'Gladys'}
+  // if(typeof lastName === 'undefined'){lastName === 'Doe'}
+  return 'HELLO ' + firstName + ' ' +lastName;
+};
+
+console.log(greet());
+
+// FUNCTION EXPRESSIONS
+
+const square = function(x = 3){
+  return x*x;
+};
+
+console.log(square(8));
+
+// IMMEDIATELY INVOCABLE FUNCTION EXPRESSIONS = IIFEs
+
+(function(){
+   console.log('IIFE')
+})();
+
+(function(name){
+  console.log('Hello ' + name)
+})('Brad');
+
+// PROPERTY METHODS - A function inside of an object 
+
+const todo = {
+  add: function(){
+    console.log('Add todo..')
+  },
+  edit: function(id){
+    console.log(`Edit todo ${id}`)
+  }
+};
+
+todo.delete = function(){
+  console.log('Delete todo...')
+};
+
+todo.add();
+todo.edit(22);
+todo.delete();
+
