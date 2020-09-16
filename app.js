@@ -799,3 +799,59 @@ Method = a function inside of an object
 
 // console.log('Global scope ', a, b, c);
 
+
+// ...........................................
+// SECTION THREE - DOM MANIPULATION AND EVENTS 
+// Document object model 
+// Tree of nodes / elements created by the browser
+
+
+// EXAMINING THE DOCUMENT OBJECT MODEL 
+
+let val;
+
+val = document; // This is equals to the entire html document 
+
+val = document.all; // This looks like an array starting with the tags
+val = document.all[0] // This will give you the <html> element
+val = document.all[1] // Result is next element = <head> and so on <meta>
+val = document.all.length; // This counts all the elements 
+val = document.head;
+val = document.body;
+val = document.doctype;
+val = document.domain;
+val = document.URL;
+val = document.characterSet;
+val = document.contentType;
+
+// Get elements from the form tag
+val = document.forms;
+val = document.forms[0];
+val = document.forms[0].id;
+val = document.forms[0].method;
+val = document.forms[0].action;
+
+// Links
+val = document.links;
+val = document.links[0];
+val = document.links[0].id;
+val = document.links[0].className;
+val = document.links[0].classList[0];
+
+// Images
+val = document.images;
+
+// Scripts
+val = document.scripts;
+val = document.scripts[2].getAttribute('src');
+
+let scripts = document.scripts;
+
+// Convert to array to be able to use forEach and get all the scripts 
+let scriptsArr = Array.from(scripts); 
+
+scriptsArr.forEach(function(script) {
+  console.log(script.getAttribute('src'));
+}); // This is an error because forEach can only be used with arrays 
+
+console.log(val);
