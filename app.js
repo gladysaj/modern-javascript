@@ -808,50 +808,90 @@ Method = a function inside of an object
 
 // EXAMINING THE DOCUMENT OBJECT MODEL 
 
-let val;
+// let val;
 
-val = document; // This is equals to the entire html document 
+// val = document; // This is equals to the entire html document 
 
-val = document.all; // This looks like an array starting with the tags
-val = document.all[0] // This will give you the <html> element
-val = document.all[1] // Result is next element = <head> and so on <meta>
-val = document.all.length; // This counts all the elements 
-val = document.head;
-val = document.body;
-val = document.doctype;
-val = document.domain;
-val = document.URL;
-val = document.characterSet;
-val = document.contentType;
+// val = document.all; // This looks like an array starting with the tags
+// val = document.all[0] // This will give you the <html> element
+// val = document.all[1] // Result is next element = <head> and so on <meta>
+// val = document.all.length; // This counts all the elements 
+// val = document.head;
+// val = document.body;
+// val = document.doctype;
+// val = document.domain;
+// val = document.URL;
+// val = document.characterSet;
+// val = document.contentType;
 
 // Get elements from the form tag
-val = document.forms;
-val = document.forms[0];
-val = document.forms[0].id;
-val = document.forms[0].method;
-val = document.forms[0].action;
+// val = document.forms;
+// val = document.forms[0];
+// val = document.forms[0].id;
+// val = document.forms[0].method;
+// val = document.forms[0].action;
 
 // Links
-val = document.links;
-val = document.links[0];
-val = document.links[0].id;
-val = document.links[0].className;
-val = document.links[0].classList[0];
+// val = document.links;
+// val = document.links[0];
+// val = document.links[0].id;
+// val = document.links[0].className;
+// val = document.links[0].classList[0];
 
 // Images
-val = document.images;
+// val = document.images;
 
 // Scripts
-val = document.scripts;
-val = document.scripts[2].getAttribute('src');
+// val = document.scripts;
+// val = document.scripts[2].getAttribute('src');
 
-let scripts = document.scripts;
+// let scripts = document.scripts;
 
 // Convert to array to be able to use forEach and get all the scripts 
-let scriptsArr = Array.from(scripts); 
+// let scriptsArr = Array.from(scripts); 
 
-scriptsArr.forEach(function(script) {
-  console.log(script.getAttribute('src'));
-}); // This is an error because forEach can only be used with arrays 
+// scriptsArr.forEach(function(script) {
+//   console.log(script.getAttribute('src'));
+// }); // This is an error because forEach can only be used with arrays 
 
-console.log(val);
+// console.log(val);
+
+
+// DOM SELECTORS FOR SINGLE ELEMENTS 
+
+// Single element selector it is just going to grab the first one 
+// document.getElementById();
+
+console.log(document.getElementById('task-title'));
+
+// Get things from the element 
+console.log(document.getElementById('task-title').id);
+console.log(document.getElementById('task-title').className);
+
+const taskTitle = document.getElementById('task-title'); // with this we can use taskTitle directly
+
+// Change styling 
+taskTitle.style.background = 'goldenrod'; 
+document.getElementById('task-title').style.color = 'red';
+document.getElementById('task-title').style.padding = '5px';
+// document.getElementById('task-title').style.display = 'none'; // to desappear text
+
+// Change the content 
+document.getElementById('task-title').textContent = 'Task List example';
+document.getElementById('task-title').innerText = 'My tasks';
+document.getElementById('task-title').innerHTML = '<span style="color: red"> Task list </span>';
+
+// document.querySelector()
+console.log(document.querySelector('#task-title')); // get by id 
+console.log(document.querySelector('.card-title')); // get by class
+console.log(document.querySelector('h5')); // will get just the first one 
+
+document.querySelector('li').style.color = 'red'; // just the first li
+document.querySelector('ul li').style.color = 'blue';
+document.querySelector('ul li').style.color = 'green';
+
+document.querySelector('li:last-child').style.color = 'red'; // the last one on the list
+document.querySelector('li:nth-child(3)').style.color = 'goldenrod';
+document.querySelector('li:nth-child(4)').textContent= 'Hello World';
+document.querySelector('li:nth-child(odd)').style.background = '#ccc'; // just works for the first odd
+document.querySelector('li:nth-child(even)').style.background = '#f3f3';
