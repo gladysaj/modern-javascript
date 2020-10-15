@@ -140,13 +140,13 @@ Arrays, Object Literals, Functions, Dates, Anything else
    // Always leave it without decimals 
   //  val = parseInt('100.30'); // = 100
    // Use decimals 
-  //  val = parseFloat('100.30'); // = 100.3 (withouth the last 0, to added it you can use toFixed(2))
+  //  val = parseFloat('100.30'); // = 100.3 (without the last 0, to add it you can use toFixed(2))
 
    // Output 
   //  console.log(val);
   //  console.log(typeof val)
   //  console.log(val.length) // only works on strings to give you the number of characters
-  //  console.log(val.toFixed()); // only works with numbers, you can specify decimals 
+  //  console.log(val.toFixed()); // only works with numbers, you can specify decimals
 
 
   //  const val1 = 5; // this can be = 56 if we use String()
@@ -176,20 +176,20 @@ Arrays, Object Literals, Functions, Dates, Anything else
 // This property represents the base of natural logarithms, e, approximately 2.718.
 // val = Math.E;
 // Round to the nearest 
-// val = Math.round(2.8);
-// round up no matter what
-// val = Math.ceil(2.4);
+// val = Math.round(2.8); = 3
+// round up no matter what, for example less than .5
+// val = Math.ceil(2.4); = 3
 // round down
-// val = Math.floor(2.8);
+// val = Math.floor(2.8); = 2
 // this function returns the square root of a number, 
-// val = Math.sqrt(64);
+// val = Math.sqrt(64); = 8
 // absolute number 
 // val = Math.abs(-3); // = will give you the absolute num 3
 // this function returns the base to the exponent power
 // val = Math.pow(8, 2);
 // return minimum
-// val = Math.min(2,33,56,8);
-// val = Math.max(2,33,56,8);
+// val = Math.min(2,33,56,8); = 2
+// val = Math.max(2,33,56,8); = 56
 // get a random decimal number
 // val = Math.random();
 // random number with decimal and between 0 to 20
@@ -223,7 +223,7 @@ Method = a function inside of an object
 
 // Append  (add but not replace)
 // val = 'Gladys';
-// val += 'Alvarez';
+// val += 'Alvarez'; = 'GladysAlvarez'
 
 // val = 'Hello, my name is ' + firstName + ' and I am ' + age;
 
@@ -253,21 +253,21 @@ Method = a function inside of an object
 // get last character
 // val = firstName.charAt(firstName.length -1);
 
-// get substring() to get characters from a point to another
+// get substring() to get characters from a point to another (doesn't include last one)
 // val = firstName.substring(0, 4);
 
 // slice() to use in strings and arrays 
-// val = firstName.slice(0, 4);
+// val = firstName.slice(0, 4); (doesn't include last one)
 // val = firstName.slice(-3); // this will start from the back 
 
 // split() this will turn them into a separated array
 // val = str.split(' '); // ex ["G", "l", "a", "d"]
 // val = tags.split(',');  // ex ["Glad"]
 
-// replace() replace something inside a string (add the original, the new one)
-// val = str.replace('Gladys', 'Brad');
+// replace() replace something inside a string (add the original, add the new one)
+// val = str.replace('Gladys', 'Brad'); --> doesn't change the original one 
 
-// includes() true or false, values are based if something is on the string 
+// includes() true or false, values are based if something is on the string (exactly lower or upper cased)
 // val = str.includes('Hello');
 
 
@@ -320,17 +320,17 @@ Method = a function inside of an object
 // let val3;
 
 // Get array length
-// val3 = newNumbers.length;
+// val3 = newNumbers.length; --> count normal without indexes
 
 // Check if is array
-// val3 = Array.isArray(numbers);
+// val3 = Array.isArray(numbers); = true, false 
 
 // Get a single value from array  (will return the number in that index passed)
 // val3 = newNumbers[3];
 // val3 = newNumbers[0];
 
 // Insert into array the number 100 in the index 2
-// newNumbers[2] = 100;
+// newNumbers[2] = 100; --> this changes the original array in that index positionm
 
 // Find index of a value inside the array
 // val3 = newNumbers.indexOf(45);
@@ -406,7 +406,7 @@ Method = a function inside of an object
 // val = newPerson['firstName'];
 // val = newPerson.firstName;
 // val = newPerson.age;
-// val = newPerson.hobbies[1]; // to select a specifi value with the index
+// val = newPerson.hobbies[1]; // to select a specific value with the index
 // val = newPerson.address['city'];
 // val = newPerson.getBirthYear();
 
@@ -789,7 +789,7 @@ Method = a function inside of an object
 //  var a = 4;
 //  let b = 5;
 //  const c = 6;
-//  console.log('If scope ', a, b, c) // result now iw taking a from the block and b , c from global 
+//  console.log('If scope ', a, b, c) // result now is taking a from the block and b , c from global 
 // }
 
 
@@ -895,3 +895,16 @@ document.querySelector('li:nth-child(3)').style.color = 'goldenrod';
 document.querySelector('li:nth-child(4)').textContent= 'Hello World';
 document.querySelector('li:nth-child(odd)').style.background = '#ccc'; // just works for the first odd
 document.querySelector('li:nth-child(even)').style.background = '#f3f3';
+
+
+// DOM SELECTORS FOR MULTIPLE ELEMENTS
+
+
+// Create a function that checks if a string is a palindrome // Split the string
+// Reverse the string
+// Join it
+// Check if it equals the original string
+
+
+
+
