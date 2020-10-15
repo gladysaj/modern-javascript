@@ -862,48 +862,93 @@ Method = a function inside of an object
 // Single element selector it is just going to grab the first one 
 // document.getElementById();
 
-console.log(document.getElementById('task-title'));
+// console.log(document.getElementById('task-title'));
 
 // Get things from the element 
-console.log(document.getElementById('task-title').id);
-console.log(document.getElementById('task-title').className);
+// console.log(document.getElementById('task-title').id);
+// console.log(document.getElementById('task-title').className);
 
-const taskTitle = document.getElementById('task-title'); // with this we can use taskTitle directly
+// const taskTitle = document.getElementById('task-title'); // with this we can use taskTitle directly
 
 // Change styling 
-taskTitle.style.background = 'goldenrod'; 
-document.getElementById('task-title').style.color = 'red';
-document.getElementById('task-title').style.padding = '5px';
+// taskTitle.style.background = 'goldenrod'; 
+// document.getElementById('task-title').style.color = 'red';
+// document.getElementById('task-title').style.padding = '5px';
 // document.getElementById('task-title').style.display = 'none'; // to desappear text
 
 // Change the content 
-document.getElementById('task-title').textContent = 'Task List example';
-document.getElementById('task-title').innerText = 'My tasks';
-document.getElementById('task-title').innerHTML = '<span style="color: red"> Task list </span>';
+// document.getElementById('task-title').textContent = 'Task List example';
+// document.getElementById('task-title').innerText = 'My tasks';
+// document.getElementById('task-title').innerHTML = '<span style="color: red"> Task list </span>';
 
 // document.querySelector()
-console.log(document.querySelector('#task-title')); // get by id 
-console.log(document.querySelector('.card-title')); // get by class
-console.log(document.querySelector('h5')); // will get just the first one 
+// console.log(document.querySelector('#task-title')); // get by id 
+// console.log(document.querySelector('.card-title')); // get by class
+// console.log(document.querySelector('h5')); // will get just the first one 
 
-document.querySelector('li').style.color = 'red'; // just the first li
-document.querySelector('ul li').style.color = 'blue';
-document.querySelector('ul li').style.color = 'green';
+// document.querySelector('li').style.color = 'red'; // just the first li
+// document.querySelector('ul li').style.color = 'blue';
+// document.querySelector('ul li').style.color = 'green';
 
-document.querySelector('li:last-child').style.color = 'red'; // the last one on the list
-document.querySelector('li:nth-child(3)').style.color = 'goldenrod';
-document.querySelector('li:nth-child(4)').textContent= 'Hello World';
-document.querySelector('li:nth-child(odd)').style.background = '#ccc'; // just works for the first odd
-document.querySelector('li:nth-child(even)').style.background = '#f3f3';
+// document.querySelector('li:last-child').style.color = 'red'; // the last one on the list
+// document.querySelector('li:nth-child(3)').style.color = 'goldenrod';
+// document.querySelector('li:nth-child(4)').textContent= 'Hello World';
+// document.querySelector('li:nth-child(odd)').style.background = '#ccc'; // just works for the first odd
+// document.querySelector('li:nth-child(even)').style.background = '#f3f3';
 
 
 // DOM SELECTORS FOR MULTIPLE ELEMENTS
 
+// document.getElementsByClassName
 
-// Create a function that checks if a string is a palindrome // Split the string
-// Reverse the string
-// Join it
-// Check if it equals the original string
+// const items = document.getElementsByClassName('collection-item');
+// console.log(items);
+// console.log(items[0]);  // get the first one
+// items[0].style.color = 'red'; // style collection index 0
+// items[3].textContent = 'Hi'; 
+
+// const listItems = document.querySelector('ul').getElementsByClassName('collection-items');
+// console.log(listItems);
+
+// document.getElementsByTag
+// let lis = document.getElementsByTagName('li');
+// console.log(lis);
+// console.log(lis[0]);  // get the first one
+// items[0].style.color = 'red'; // style collection index 0
+// items[3].textContent = 'Hi'; 
+
+// Convert HTML Collection into array 
+// lis = Array.from(lis);
+
+// lis.reverse(); // this won't work because is not an array 
+// lis.forEach(function(li) {
+//   console.log(li.className)
+//   li.textContent = `${index}: Hello`;
+// });
+
+// console.log(lis);
+
+//document.querySelectorAll
+// const items = document.querySelectorAll('ul.collection li.collection-item');
+
+// items.forEach(function(item, index) {
+//   item.textContent = `${index}: Hi`;
+// });
+
+// const liOdd = document.querySelectorAll('li:nth-child(odd)');
+// const liEven = document.querySelectorAll('li:nth-child(even)');
+
+// liOdd.forEach(function(li, index) {
+//    li.style.background = '#ccc';
+// });
+
+// for(let i = 0; i < liEven.length; i++) {
+//     liEven[i].style.background = '#f4f4f4';
+// }
+
+// console.log(items);
+
+
 
 
 
