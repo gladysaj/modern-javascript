@@ -949,6 +949,95 @@ Method = a function inside of an object
 // console.log(items);
 
 
+// TRAVERSING THE DOM - Move up and down 
+
+let val;
+
+const list = document.querySelector('ul.collection');
+const listItem = document.querySelector('li.collection-item:first-child');
+
+// val = listItem;
+// val = list;
+
+// Get child nodes (this happens due to the break in the HTML)
+// val = list.childNodes; // result is the list with the li's and text line 
+// val = list.childNodes[0]; // text
+// val = list.childNodes[0].nodeName; // text
+// val = list.childNodes[3].nodeType; //  comment added in the HTML = 8
+
+// Types of nodes 
+
+// 1 - Element 
+// 2 - Attribute (deprecated)
+// 3 - Text node 
+// 8 - Comment 
+// 9 - Document itself 
+// 10 - Doctype 
+
+// Get children element nodes (returns an HTML collection )
+val = list.children; // just the elements without the text break
+val = list.children[0]; // = first li 
+list.children[1].textContent = 'Hello Gladys'; // change the text in the li
+
+// Children of children 
+// list.children[3].children[0].id = 'test-link';
+// val = list.children[3].children;
+
+// First child
+val = list.firstChild; // like the first childnode = text 
+val = list.firstElementChild; // get the element directly 
+
+// Last child 
+val = list.lastChild;
+val = list.lastElementChild;
+
+// Count child elements 
+val = list.childElementCount; // get the 5 children li's of the ul. 
+
+// Get parents node 
+val = listItem.parentNode; //  to get the ul 
+val = listItem.parentElement;
+val = list.parentElement.parentElement; // to get the div
+
+// Get next sibling
+val = listItem.nextSibling; // equals to text works like a child 
+val = listItem.nextElementSibling; // to get the second li element 
+val = listItem.nextElementSibling.nextElementSibling; // to get the third one
+
+// Get previous sibling 
+val = listItem.previousSibling; // text node
+val = listItem.previousElementSibling; // null nothing up
+
+console.log(val);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
