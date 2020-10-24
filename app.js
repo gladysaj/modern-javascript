@@ -951,10 +951,10 @@ Method = a function inside of an object
 
 // TRAVERSING THE DOM - Move up and down 
 
-let val;
+// let val;
 
-const list = document.querySelector('ul.collection');
-const listItem = document.querySelector('li.collection-item:first-child');
+// const list = document.querySelector('ul.collection');
+// const listItem = document.querySelector('li.collection-item:first-child');
 
 // val = listItem;
 // val = list;
@@ -975,74 +975,129 @@ const listItem = document.querySelector('li.collection-item:first-child');
 // 10 - Doctype 
 
 // Get children element nodes (returns an HTML collection )
-val = list.children; // just the elements without the text break
-val = list.children[0]; // = first li 
-list.children[1].textContent = 'Hello Gladys'; // change the text in the li
+// val = list.children; // just the elements without the text break
+// val = list.children[0]; // = first li 
+// list.children[1].textContent = 'Hello Gladys'; // change the text in the li
 
 // Children of children 
 // list.children[3].children[0].id = 'test-link';
 // val = list.children[3].children;
 
 // First child
-val = list.firstChild; // like the first childnode = text 
-val = list.firstElementChild; // get the element directly 
+// val = list.firstChild; // like the first childnode = text 
+// val = list.firstElementChild; // get the element directly 
 
 // Last child 
-val = list.lastChild;
-val = list.lastElementChild;
+// val = list.lastChild;
+// val = list.lastElementChild;
 
 // Count child elements 
-val = list.childElementCount; // get the 5 children li's of the ul. 
+// val = list.childElementCount; // get the 5 children li's of the ul. 
 
 // Get parents node 
-val = listItem.parentNode; //  to get the ul 
-val = listItem.parentElement;
-val = list.parentElement.parentElement; // to get the div
+// val = listItem.parentNode; //  to get the ul 
+// val = listItem.parentElement;
+// val = list.parentElement.parentElement; // to get the div
 
 // Get next sibling
-val = listItem.nextSibling; // equals to text works like a child 
-val = listItem.nextElementSibling; // to get the second li element 
-val = listItem.nextElementSibling.nextElementSibling; // to get the third one
+// val = listItem.nextSibling; // equals to text works like a child 
+// val = listItem.nextElementSibling; // to get the second li element 
+// val = listItem.nextElementSibling.nextElementSibling; // to get the third one
 
 // Get previous sibling 
-val = listItem.previousSibling; // text node
-val = listItem.previousElementSibling; // null nothing up
+// val = listItem.previousSibling; // text node
+// val = listItem.previousElementSibling; // null nothing up
 
 // console.log(val);
 
 // CREATING ELEMENTS
 
-const li = document.createElement('li');
+// const li = document.createElement('li');
 
 // Add class
-li.className = 'collection-item';
+// li.className = 'collection-item';
 
 // Add id 
-li.id = 'new-item';
+// li.id = 'new-item';
 
 // Add attribute 
-li.setAttribute('title', 'New item');
+// li.setAttribute('title', 'New item');
 
 // Create text node and append (append = to put something inside)
-li.appendChild(document.createTextNode('Hello world'));
+// li.appendChild(document.createTextNode('Hello world'));
 
-// Create new link element 
-const link = document.createElement('a');
+// // Create new link element 
+// const link = document.createElement('a');
 
 // Add classes
-link.className = 'delete-item secondary-content';
+// link.className = 'delete-item secondary-content';
 
 // Add icon HTML 
-link.innerHTML = '<i class= "fa fa-remove"></i>';
+// link.innerHTML = '<i class= "fa fa-remove"></i>';
 
 // Append link into li 
-li.appendChild(link);
+// li.appendChild(link);
 
 // Append li as child to ul 
-document.querySelector('ul.collection').appendChild(li); // to get a new li line 
+// document.querySelector('ul.collection').appendChild(li); // to get a new li line 
 
 // console.log(li);
 
+// REMOVING AND REPLACING ELEMENTS 
+
+// Create element 
+// const newHeading = document.createElement('h2');
+
+// Add id 
+// newHeading.id = 'task-title';
+
+// New text node 
+// newHeading.appendChild(document.createTextNode('Task List'));
+
+// Get the old heading 
+// const oldHeading = document.getElementById('task-title');
+// Parent 
+// const cardAction = document.querySelector('.card-action');
+
+// Replace 
+// cardAction.replaceChild(newHeading, oldHeading); // second parameter is the one replaced
+
+// console.log(newHeading);
+
+// Remove element 
+// const lis = document.querySelectorAll('li');
+// const list = document.querySelector('ul');  
+
+// Remove a specific list item 
+// lis[0].remove();
+
+// // Remove child element 
+// list.removeChild(lis[3]);
+
+// CLASSES AND ATTRIBUTES 
+
+// const firstLi = document.querySelector('li:first-child');
+// const link = firstLi.children[0];
+
+// let val;
+
+// Classes
+// val = link.className; // to get the classes the link has
+// val = link.classList;
+// val = link.classList[0];
+// link.classList.add('test');
+// link.classList.remove('test');
+// val = link;
+
+// Attributes 
+// val = link.getAttribute('href');
+// val = link.setAttribute('href', 'http://google.com');
+// val = link.hasAttribute('href');
+// link.setAttribute('title', 'Google');
+// link.removeAttribute('title');
+// val = link;
+ 
+// console.log(val);
 
 
 
