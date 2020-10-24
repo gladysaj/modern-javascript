@@ -1008,7 +1008,41 @@ val = listItem.nextElementSibling.nextElementSibling; // to get the third one
 val = listItem.previousSibling; // text node
 val = listItem.previousElementSibling; // null nothing up
 
-console.log(val);
+// console.log(val);
+
+// CREATING ELEMENTS
+
+const li = document.createElement('li');
+
+// Add class
+li.className = 'collection-item';
+
+// Add id 
+li.id = 'new-item';
+
+// Add attribute 
+li.setAttribute('title', 'New item');
+
+// Create text node and append (append = to put something inside)
+li.appendChild(document.createTextNode('Hello world'));
+
+// Create new link element 
+const link = document.createElement('a');
+
+// Add classes
+link.className = 'delete-item secondary-content';
+
+// Add icon HTML 
+link.innerHTML = '<i class= "fa fa-remove"></i>';
+
+// Append link into li 
+li.appendChild(link);
+
+// Append li as child to ul 
+document.querySelector('ul.collection').appendChild(li); // to get a new li line 
+
+// console.log(li);
+
 
 
 
