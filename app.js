@@ -1186,6 +1186,58 @@ Method = a function inside of an object
 // };
 
 
+// KEYBOARD AND INPUT EVENTS 
+
+// const form = document.querySelector('form');
+// const taskInput = document.getElementById('task');
+// const heading = document.querySelector('h5');
+// const select = document.querySelector('select')
+
+// // To clear the input in the page 
+// taskInput.value = '';
+
+// form.addEventListener('submit', runEvent);
+
+// KEYDOWN
+// taskInput.addEventListener('keydown', runEvent);
+
+// KEYUP
+// taskInput.addEventListener('keyup', runEvent);
+
+// KEYPRESS
+// taskInput.addEventListener('keypress', runEvent);
+
+// FOCUS / when you click in an input
+// taskInput.addEventListener('focus', runEvent);
+
+// BLUR / when you click the input and then out 
+// taskInput.addEventListener('blur', runEvent);
+
+// CUT / when you delete anything in the input 
+// taskInput.addEventListener('cut', runEvent);
+
+// PASTE 
+// taskInput.addEventListener('paste', runEvent);
+
+// INPUT 
+// taskInput.addEventListener('input', runEvent);
+
+// CHANGE 
+// select.addEventListener('change', runEvent);
+
+// function runEvent(e) {
+//   console.log(`EVENT TYPE: ${e.type}`);
+
+//   console.log(e.target.value) // To log everything we type
+
+  // heading.innerText = e.target.value; // To log in the heading the input value
+
+//   console.log(taskInput.value); // To get the input values
+
+//   e.preventDefault() // to prevent the page to refresh example action in the form tag in the index
+// };
+
+
 
 
 
