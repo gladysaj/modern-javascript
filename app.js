@@ -1100,6 +1100,48 @@ Method = a function inside of an object
 // console.log(val);
 
 
+// EVENT LISTENERS & THE EVENT OBJECT 
+
+// document.querySelector('.clear-tasks').addEventListener('click', 
+// function(e){
+//   console.log('Hello World');
+//   // e.preventDefault(); // we can add a # in the href in the html to prevent the behaviour (page refresh)
+// });
+
+// document.querySelector('.clear-tasks').addEventListener('click', onClick);
+//  function onClick(e){
+//   //  console.log('Clicked');
+
+//   let val; 
+
+//   val = e;
+
+//   // Event target element 
+//   val = e.target;
+//   val = e.target.id;
+//   val = e.target.className;
+//   val = e.target.classList;
+
+//   e.target.innerText = 'Hello';
+
+//   // Event type 
+//   val = e.type;
+
+//   // Timestamp
+//   val = e.timeStamp;
+
+//   // Coords event relative to the window (Position when you clicked)
+//   val = e.clientY;
+//   val = e.clientX;
+
+//   // Coords event relative to the element
+//   val = e.offsetY;
+//   val = e.offsetX;
+
+//   console.log(val)
+//  }
+
+
 
 
 
