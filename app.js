@@ -1282,6 +1282,57 @@ Method = a function inside of an object
 // };
 
 
+// LOCAL AND SESSION STORAGE
+
+// Set local storage item (this will stay until you manually cleared it out
+// localStorage.setItem('name', 'John');
+// localStorage.setItem('age', '26');
+
+// Set session storage item  (this will be cleared out when you refresh the page)
+// sessionStorage.setItem('name', 'Beth');
+
+// Remove from storage 
+// localStorage.removeItem('name');
+
+// Get the value from storage
+// const name = localStorage.getItem('name');
+// const age = localStorage.getItem('age');
+
+// // Clear local storage (it will turn to null)
+// localStorage.clear();
+
+// console.log(name, age);
+
+// 
+// document.querySelector('form').addEventListener('submit', 
+//   function(e){
+//      const task = document.getElementById('task').value;
+
+//      // An array of strings is needed to store all the inputs 
+//      let tasks;
+
+//      if(localStorage.getItem('tasks') === null) {
+//         tasks = [];
+//      } else {
+//        tasks = JSON.parse(localStorage.getItem('tasks')); // needs to store a string JSON.parse
+//      }
+
+//      tasks.push(task);
+
+//      console.log(task);
+//      localStorage.setItem('tasks', JSON.stringify(tasks)); // this stores just one thing at a time
+
+//      alert('Task saved');
+
+//      e.preventDefault();
+// }); 
+
+// // to be able to loop through the array 
+// const tasks = JSON.parse(localStorage.getItem('tasks'));
+
+// tasks.forEach(function(task){
+//   console.log(task)
+// });
 
 
 
